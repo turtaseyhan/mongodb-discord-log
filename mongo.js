@@ -1,8 +1,8 @@
 const mongoose = require('mongoose')
-const mongoPath = 'mongodb+srv://pie-db:<password>@cluster0.kyf6p.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'
+const mongoPath = 'mongodb//localhost:27017/log'
 module.exports = async () => 
 {
-    await mongoose.connect('mongodb+srv://pie-db:0711byada@cluster0.kyf6p.mongodb.net/log?retryWrites=true&w=majority',{
+    await mongoose.connect('mongodb//localhost:27017/log',{
         useNewUrlParser: true,
         useUnifiedTopology: true
     })
